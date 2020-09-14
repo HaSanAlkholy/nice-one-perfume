@@ -136,9 +136,12 @@ $(window).on('load', function () {
   });
 
 
-  $(".slide").on("click", function () {
-    $(this).toggleClass("active");
-    $(this).children("ul").slideToggle();
+  $(".slide").on("click", function (e) {
+    if (e.target.classList.contains('drop')) {
+      console.log(e.target);
+      $(this).toggleClass("active");
+      $(this).children("ul").slideToggle();
+    }
   });
 
 
