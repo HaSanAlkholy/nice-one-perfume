@@ -491,7 +491,7 @@ header {
             bottom: 40px;
 
             @media (max-width: 576px) {
-                bottom: 10px;
+                bottom: 5px;
             }
         }
 
@@ -502,6 +502,11 @@ header {
             border-radius: 100%;
             background: rgba(0, 0, 0, 0.5);
             opacity: 1;
+
+            @media(max-width:576px){
+                width:6px;
+                height:6px;
+            }
         }
         .swiper-pagination-bullet-active {
             opacity: 1;

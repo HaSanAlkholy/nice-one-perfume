@@ -832,7 +832,7 @@ header .swiper-container .swiper-pagination {
 
 @media (max-width: 576px) {
   header .swiper-container .swiper-pagination {
-    bottom: 10px;
+    bottom: 5px;
   }
 }
 
@@ -842,6 +842,13 @@ header .swiper-container .swiper-pagination-bullet {
   border-radius: 100%;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
+}
+
+@media (max-width: 576px) {
+  header .swiper-container .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+  }
 }
 
 header .swiper-container .swiper-pagination-bullet-active {
