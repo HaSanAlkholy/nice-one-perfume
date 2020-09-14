@@ -59,28 +59,33 @@ $(window).on('load', function () {
 
   // timing start
 
-  let t1 = Number(document.querySelector("#t1").children[0].innerText);
-  let t2 = Number(document.querySelector("#t2").children[0].innerText);
-  let t3 = Number(document.querySelector("#t3").children[0].innerText);
+  $('.countDown').each(function () {
+    let t3 = Number($($(this).children('.hour')[0]).children('.t1')[0].innerHTML);
+    let t2 = Number($($(this).children('.min')[0]).children('.t2')[0].innerHTML);
+    let t1 = Number($($(this).children('.sec')[0]).children('.t3')[0].innerHTML);
+    let that = this;
 
-  var timinginterval = setInterval(function () {
 
-    if (t1 > 1) {
-      t1--;
+    var timinginterval = setInterval(function () {
 
-    } else if (t1 == 1) {
-      t1 = 59;
-      if (t2 > 0) {
-        t2--;
-      } else if (t2 == 0) {
-        t2 = 59;
-        t3--;
+      if (t1 > 1) {
+        t1--;
+
+      } else if (t1 == 1) {
+        t1 = 59;
+        if (t2 > 0) {
+          t2--;
+        } else if (t2 == 0) {
+          t2 = 59;
+          t3--;
+        }
       }
-    }
-    document.querySelector("#t1").children[0].innerHTML = t1;
-    document.querySelector("#t2").children[0].innerHTML = t2;
-    document.querySelector("#t3").children[0].innerHTML = t3;
-  }, 1000);
+      $($(that).children('.hour')[0]).children('.t1')[0].innerHTML = t3;
+      $($(that).children('.min')[0]).children('.t2')[0].innerHTML = t2;
+      $($(that).children('.sec')[0]).children('.t3')[0].innerHTML = t1;
+    }, 1000);
+
+  });
 
 
   //products slider
