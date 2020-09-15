@@ -74,7 +74,7 @@ ul {
 }
 
 *::-webkit-scrollbar {
-  width: 13px;
+  width: 10px;
   background-color: #f5f5f5;
 }
 
@@ -150,16 +150,26 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slide .drop span {
   margin-right: auto;
   font-size: 11px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .slide ul {
   display: none;
   margin-right: 15px;
+}
+
+.slide-active .drop span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 html[dir="ltr"] .slide {
@@ -175,18 +185,6 @@ html[dir="ltr"] .slide ul {
   text-align: left;
   margin-left: 15px;
   margin-right: 0;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-  background-color: #f5f5f5;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  -webkit-box-shadow: inset 0 0 10px #414141;
-          box-shadow: inset 0 0 10px #414141;
-  background: #414141;
 }
 
 .pre-loader {
@@ -497,8 +495,6 @@ nav .nav-bottom .nava .nava-content .nava-social {
     font-size: 18px;
   }
   nav .nav-bottom .nava .nava-content .small-links {
-    margin-top: 30px;
-    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -620,7 +616,7 @@ nav .nav-bottom .nav-icons > div:hover {
 
 @media (max-width: 576px) {
   nav .nav-bottom .nav-icons > div {
-    margin-right: 25px;
+    margin-right: 18px;
   }
 }
 
@@ -629,7 +625,7 @@ nav .nav-bottom .nav-icons .user a:hover {
 }
 
 nav .nav-bottom .nav-icons .user .dropdown-content {
-  padding: 10px 20px;
+  padding: 3px 20px 10px 20px;
 }
 
 nav .nav-bottom .nav-icons .user .dropdown-content > div {
@@ -697,6 +693,10 @@ nav .nav-bottom .nav-icons .nav-lang .dropdown-content > div {
 nav .nav-bottom .nav-icons .menu {
   display: none;
   font-size: 30px;
+}
+
+nav .nav-bottom .nav-icons .menu span {
+  margin-bottom: 4px;
 }
 
 @media (max-width: 992px) {
@@ -901,7 +901,7 @@ header .swiper-container .swiper-button-next {
   background-color: transparent;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-  top: 67%;
+  top: 60%;
 }
 
 @media (max-width: 768px) {
@@ -918,7 +918,7 @@ header .swiper-container .swiper-button-next:hover {
 
 header .swiper-container .swiper-button-prev:after,
 header .swiper-container .swiper-button-next:after {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 header .swiper-container .swiper-button-prev {
@@ -943,6 +943,12 @@ header .swiper-container .swiper-slide:hover img {
 
 #banners {
   margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  #banners {
+    margin-top: 8px;
+  }
 }
 
 #banners .container {
@@ -1020,7 +1026,7 @@ header .swiper-container .swiper-slide:hover img {
   #banners .banners-content .banner {
     width: 100%;
     max-width: unset;
-    margin: 12px 0;
+    margin: 8px 0;
   }
 }
 
@@ -1074,9 +1080,21 @@ header .swiper-container .swiper-slide:hover img {
   margin-bottom: 40px;
 }
 
+@media (max-width: 576px) {
+  #products .product-head {
+    margin-bottom: 30px;
+  }
+}
+
 #products .product-head h2 {
   font-size: 30px;
   font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  #products .product-head h2 {
+    font-size: 24px;
+  }
 }
 
 #products .product-body {
@@ -1217,7 +1235,7 @@ header .swiper-container .swiper-slide:hover img {
 
 #products .product-body .product .product-txt h3 {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 6px;
 }
 
 #products .product-body .product .product-txt h3 a {
@@ -1272,7 +1290,7 @@ header .swiper-container .swiper-slide:hover img {
 
 @media (max-width: 992px) {
   #comments {
-    padding: 40px 0;
+    padding: 30px 0 70px 0;
   }
 }
 
@@ -1330,9 +1348,21 @@ header .swiper-container .swiper-slide:hover img {
   margin-bottom: 35px;
 }
 
+@media (max-width: 576px) {
+  #comments .comments-head {
+    margin-bottom: 20px;
+  }
+}
+
 #comments .comments-head h2 {
   font-size: 30px;
   font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  #comments .comments-head h2 {
+    font-size: 24px;
+  }
 }
 
 #comments .s-container {
@@ -1552,7 +1582,7 @@ footer .footer-top li {
 }
 
 footer .footer-top li a {
-  font-size: 16px;
+  font-size: 15px;
   color: black;
   font-weight: 400;
   -webkit-transition: all 0.3s;
@@ -1585,7 +1615,7 @@ footer .footer-top .mail h4 {
 
 footer .footer-top .mail p {
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -1790,7 +1820,7 @@ html[dir="ltr"] nav .nav-bottom .nav-icons > div {
 @media (max-width: 576px) {
   html[dir="ltr"] nav .nav-bottom .nav-icons > div {
     margin-right: unset;
-    margin-left: 25px;
+    margin-left: 18px;
   }
 }
 

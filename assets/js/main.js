@@ -79,7 +79,6 @@ $(window).on('load', function () {
     easing: 'ease-in-out'
   });
 
-
   
   //nava toggle
   $('#nava-icon').click(function (e) {
@@ -111,7 +110,7 @@ $(window).on('load', function () {
   $(".slide").on("click", function (e) {
     if (e.target.classList.contains('drop')) {
       console.log(e.target);
-      $(this).toggleClass("active");
+      $(this).toggleClass("slide-active");
       $(this).children("ul").slideToggle();
     }
   });
