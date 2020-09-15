@@ -72,10 +72,31 @@ nav {
     z-index: 3;
     background-color: white;
     .container {
-        @media (min-width: 1200px) {
-            width: 1920px;
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+      
+        @media (min-width: 768px) {
+          width: 100%; 
         }
-    }
+      
+        @media (min-width: 992px){
+          width: 100%;
+        }
+      
+        @media (min-width: 1200px) {
+          width: 1920px;
+        }
+      }
+      
+      .row {
+        margin: 0;
+      
+        & > div {
+          padding: 0;
+        }
+      }
 
     .nav-bottom {
         padding: 16px 0;
@@ -495,10 +516,32 @@ header {
     }
 
     .container {
-        @media (min-width: 1200px) {
-            width: 1920px;
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+      
+        @media (min-width: 768px) {
+          width: 100%; 
         }
-    }
+      
+        @media (min-width: 992px){
+          width: 100%;
+        }
+      
+        @media (min-width: 1200px) {
+          width: 1920px;
+        }
+      }
+      
+      .row {
+        margin: 0;
+      
+        & > div {
+          padding: 0;
+        }
+      }
+
     .swiper-container {
         width: 100%;
         height: auto;
@@ -582,6 +625,33 @@ header {
 #banners {
     margin-top: 30px;
 
+    .container {
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+      
+        @media (min-width: 768px) {
+          width: 100%; 
+        }
+      
+        @media (min-width: 992px){
+          width: 100%;
+        }
+      
+        @media (min-width: 1200px) {
+          width: 1400px;
+        }
+      }
+      
+      .row {
+        margin: 0;
+      
+        & > div {
+          padding: 0;
+        }
+      }
+
     .banners-content {
         display: flex;
         justify-content: space-between;
@@ -621,10 +691,39 @@ header {
     margin-bottom: 60px;
     text-align: center;
 
+
+
     @media (max-width: 992px) {
         margin-top: 40px;
         margin-bottom: 30px;
     }
+
+    .container {
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+      
+        @media (min-width: 768px) {
+          width: 100%; 
+        }
+      
+        @media (min-width: 992px){
+          width: 100%;
+        }
+      
+        @media (min-width: 1200px) {
+          width: 1400px;
+        }
+      }
+      
+      .row {
+        margin: 0;
+      
+        & > div {
+          padding: 0;
+        }
+      }
 
     .product-head {
         margin-bottom: 40px;
@@ -800,6 +899,33 @@ header {
         padding: 40px 0;
     }
 
+    .container {
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+      
+        @media (min-width: 768px) {
+          width: 100%; 
+        }
+      
+        @media (min-width: 992px){
+          width: 100%;
+        }
+      
+        @media (min-width: 1200px) {
+          width: 1400px;
+        }
+      }
+      
+      .row {
+        margin: 0;
+      
+        & > div {
+          padding: 0;
+        }
+      }
+
     .c2 {
         position: relative;
 
@@ -952,6 +1078,35 @@ header {
 footer {
     padding-top: 80px;
     padding-bottom: 55px;
+
+    .container {
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+      
+        @media (min-width: 768px) {
+          width: 100%; 
+        }
+      
+        @media (min-width: 992px){
+          width: 100%;
+        }
+      
+        @media (min-width: 1200px) {
+          width: 1400px;
+        }
+      }
+      
+      .row {
+        margin: 0;
+      
+        & > div {
+          padding: 0;
+        }
+      }
+
+      
     .footer-top {
         display: flex;
         justify-content: space-between;

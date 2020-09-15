@@ -60,31 +60,6 @@ ul {
   margin: 0;
 }
 
-.container {
-  position: relative;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1400px;
-  }
-}
-
 .c2 {
   width: 1145px;
   max-width: 100%;
@@ -96,14 +71,6 @@ ul {
   .c2 {
     padding: 0 15px;
   }
-}
-
-.row {
-  margin: 0;
-}
-
-.row > div {
-  padding: 0;
 }
 
 *::-webkit-scrollbar {
