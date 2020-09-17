@@ -462,9 +462,9 @@ nav .nav-bottom .nava .nava-content .nava-social {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   nav .nav-bottom .nava .nava-content .nava-head .nava-lang .drop img {
     margin-left: 5px;
