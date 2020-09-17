@@ -189,6 +189,7 @@ nav {
                         display: flex;
                         font-size: 12px;
                         margin: 9px 0;
+                        margin-bottom:30px;
 
                         .nava-lang {
                             .drop {
@@ -200,7 +201,7 @@ nav {
                                 }
                                 span {
                                     margin-right: 10px;
-                                    margin-top:7px;
+                                    margin-top:3px;
                                 }
                             }
                             ul {
@@ -277,7 +278,7 @@ nav {
                         }
                         .nava-close {
                             position: absolute;
-                            top: 35px;
+                            top: 40px;
                             left: 35px;
                             font-size: 25px;
                             cursor: pointer;
@@ -413,7 +414,7 @@ nav {
                 font-size: 30px;
 
                 span{
-                    margin-bottom:4px;
+                    margin-top:-6px;
                 }
                 @media (max-width: 992px) {
                     display: flex;
@@ -627,7 +628,7 @@ header {
 #banners {
     margin-top: 30px;
     
-    @media (min-width: 576px) {
+    @media (max-width: 576px) {
         margin-top: 8px;
       }
 
@@ -1274,6 +1275,19 @@ footer {
             color: black;
             margin-top: 37px;
             text-align: center;
+
+            @media(max-width:576px){
+                display: flex;
+                flex-direction: column;
+
+                .dash{
+                    display: none;
+                }
+
+                span{
+                    margin: 5px 0;
+                }
+            }
         }
 
         .payment {

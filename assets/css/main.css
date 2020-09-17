@@ -453,6 +453,7 @@ nav .nav-bottom .nava .nava-content .nava-social {
     display: flex;
     font-size: 12px;
     margin: 9px 0;
+    margin-bottom: 30px;
   }
   nav .nav-bottom .nava .nava-content .nava-head .nava-lang .drop {
     display: -webkit-box;
@@ -470,7 +471,7 @@ nav .nav-bottom .nava .nava-content .nava-social {
   }
   nav .nav-bottom .nava .nava-content .nava-head .nava-lang .drop span {
     margin-right: 10px;
-    margin-top: 7px;
+    margin-top: 3px;
   }
   nav .nav-bottom .nava .nava-content .nava-head .nava-lang ul li {
     margin: 10px 0;
@@ -544,7 +545,7 @@ nav .nav-bottom .nava .nava-content .nava-social {
   }
   nav .nav-bottom .nava .nava-content .nava-head .nava-close {
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 35px;
     font-size: 25px;
     cursor: pointer;
@@ -696,7 +697,7 @@ nav .nav-bottom .nav-icons .menu {
 }
 
 nav .nav-bottom .nav-icons .menu span {
-  margin-bottom: 4px;
+  margin-top: -6px;
 }
 
 @media (max-width: 992px) {
@@ -945,7 +946,7 @@ header .swiper-container .swiper-slide:hover img {
   margin-top: 30px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #banners {
     margin-top: 8px;
   }
@@ -1735,6 +1736,24 @@ footer .footer-bottom p {
   color: black;
   margin-top: 37px;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  footer .footer-bottom p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-bottom p .dash {
+    display: none;
+  }
+  footer .footer-bottom p span {
+    margin: 5px 0;
+  }
 }
 
 @media (max-width: 576px) {
