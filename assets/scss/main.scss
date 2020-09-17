@@ -412,9 +412,9 @@ nav {
             .menu {
                 display: none;
                 font-size: 30px;
+                margin-bottom:15px;
 
                 span{
-                    margin-bottom:7px;
                 }
                 @media (max-width: 992px) {
                     display: flex;
